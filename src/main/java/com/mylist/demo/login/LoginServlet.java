@@ -13,6 +13,10 @@ import com.mylist.demo.todo.TodoService;
 @WebServlet(urlPatterns = "/login.do")
 public class LoginServlet extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 327697187061673395L;
 	private LoginService userValidationService = new LoginService();
 	private TodoService todoService = new TodoService();
 
@@ -35,6 +39,14 @@ public class LoginServlet extends HttpServlet {
 			request.setAttribute("errorMessage", "Invalid Credentials!");
 			request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 		}
+	}
+
+	public TodoService getTodoService() {
+		return todoService;
+	}
+
+	public void setTodoService(TodoService todoService) {
+		this.todoService = todoService;
 	}
 
 }

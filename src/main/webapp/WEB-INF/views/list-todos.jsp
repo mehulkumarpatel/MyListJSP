@@ -6,11 +6,20 @@
 
 
 	<table class="table table-striped">
-		<caption>Your Todos are</caption>
+		<caption>Your List</caption>
 		<thead>
-			<th>Description</th>
-			<th>Category</th>
-			<th>Actions</th>
+			<tr>
+				<th>Description
+				<th>
+			</tr>
+			<tr>
+				<th>Category
+				<th>
+			</tr>
+			<tr>
+				<th>Actions
+				<th>
+			</tr>
 		</thead>
 		<tbody>
 			<c:forEach items="${todos}" var="todo">
@@ -27,7 +36,7 @@
 	<p>
 		<font color="red">${errorMessage}</font>
 	</p>
-	<a class="btn btn-success" href="/add-todo.do">Add New Todo</a>
+	<a class="btn btn-success" href="/add-todo.do">Add New Action</a>
 </div>
 
 <%@ include file="../common/footer.jspf"%>

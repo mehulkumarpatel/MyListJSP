@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = "/delete-todo.do")
 public class DeleteTodoServlet extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 9040618317886094354L;
 	private TodoService todoService = new TodoService();
 
 	protected void doGet(HttpServletRequest request,

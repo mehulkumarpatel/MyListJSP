@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = "/add-todo.do")
 public class AddTodoServlet extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4849606247195740691L;
 	private TodoService todoService = new TodoService();
 
 	protected void doGet(HttpServletRequest request,

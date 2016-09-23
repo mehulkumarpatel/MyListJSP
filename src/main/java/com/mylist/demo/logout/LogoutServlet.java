@@ -10,6 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(urlPatterns = "/logout.do")
 public class LogoutServlet extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8715873909382549981L;
+
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		request.getSession().invalidate();

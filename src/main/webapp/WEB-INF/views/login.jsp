@@ -21,12 +21,12 @@
 
 	<nav class="navbar navbar-default">
 
-		<a href="/" class="navbar-brand">Brand</a>
+		<a href="/" class="navbar-brand">Me</a>
 
 		<ul class="nav navbar-nav">
 			<li class="active"><a href="#">Home</a></li>
-			<li><a href="/list-todos.do">Todos</a></li>
-			<li><a href="http://www.in28minutes.com">In28Minutes</a></li>
+			<li><a href="/list-todos.do">My List</a></li>
+			<li><a href="http://stackyourgames.blogspot.com/">StackUrGame</a></li>
 		</ul>
 
 		<ul class="nav navbar-nav navbar-right">
@@ -40,7 +40,7 @@
 			<p>
 				<font color="red">${errorMessage}</font>
 			</p>
-			Name: <input type="text" name="name" /> Password:<input
+			Name: <input type="text" name="username" /> Password:<input
 				type="password" name="password" /> <input type="submit"
 				value="Login" />
 		</form>
