@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Todos</title>
+<title>My List Login</title>
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 
@@ -31,28 +31,61 @@
 
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="/login.do">Login</a></li>
+			<li><a></a></li>
 		</ul>
 
 	</nav>
 
 	<div class="container">
-		<form action="/login.do" method="post">
-			<p>
-				<font color="red">${errorMessage}</font>
-			</p>
-			Name: <input type="text" name="username" /> Password:<input
-				type="password" name="password" /> <input type="submit"
-				value="Login" />
+
+		<form class="form-horizontal" action="/login.do" method="post">
+			<fieldset>
+
+				<!-- Form Name -->
+				<legend>Login</legend>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="username">Username</label>
+					<div class="col-md-4">
+						<input id="username" name="username" type="text"
+							placeholder="enter username please" class="form-control input-md">
+						<span class="help-block">it is in your mind</span>
+					</div>
+				</div>
+
+				<!-- Password input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="password">Password</label>
+					<div class="col-md-4">
+						<input id="password" name="password" type="password"
+							placeholder="enter password please" class="form-control input-md">
+						<span class="help-block">it is in your mind</span>
+					</div>
+				</div>
+
+				<!-- Button -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="login"></label>
+					<div class="col-md-4">
+						<button id="login" name="login" class="btn btn-primary"
+							type="submit">Login</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="message"></label>
+					<div class="col-md-4">
+						<p>
+							<font color="red">${errorMessage}</font>
+						</p>
+					</div>
+				</div>
+			</fieldset>
 		</form>
 
 	</div>
 
-	<footer class="footer">
-		<div>footer content</div>
-	</footer>
-
-	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<%@ include file="../common/footer.jspf"%>
 
 </body>
 
