@@ -9,16 +9,9 @@
 		<caption>Your List</caption>
 		<thead>
 			<tr>
-				<th>Description
-				<th>
-			</tr>
-			<tr>
-				<th>Category
-				<th>
-			</tr>
-			<tr>
-				<th>Actions
-				<th>
+				<th>Description</th>
+				<th>Category</th>
+				<th>Actions</th>
 			</tr>
 		</thead>
 		<tbody>

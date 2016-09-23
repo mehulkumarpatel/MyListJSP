@@ -1,6 +1,7 @@
 
 <footer class="footer">
-	<div>footer content</div>
+	<div>Refer in28Minutes</div>
+	<div>Developed By M</div>
 </footer>
 
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
