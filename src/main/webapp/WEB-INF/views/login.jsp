@@ -26,6 +26,7 @@
 		<ul class="nav navbar-nav">
 			<li class="active"><a href="#">Home</a></li>
 			<li><a href="/list-todos.do">My List</a></li>
+			<li><a href="/animations.do">Animations</a></li>
 			<li><a href="http://stackyourgames.blogspot.com/">StackUrGame</a></li>
 		</ul>
 
